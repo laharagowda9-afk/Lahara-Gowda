@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of Lahara Gowda - Software Engineer. Featuring an interactive career timeline, technical skills, and featured software projects.">
+  <meta name="keywords" content="Portfolio, Full Stack Developer, Software Engineer, Career Timeline, Interactive Resume">
+  <meta name="author" content="Lahara Gowda">
+  <title>Lahara Gowda | Software Engineer &amp; Portfolio</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">LaharaGowda</span>
+        <span class="brand-slash">/</span>
+        <span class="brand-bracket">&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#timeline" class="nav-link highlight-link">Timeline</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle light or dark theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Get in Touch</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <!-- Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>2nd-Year Engineering Student • Aspiring Engineer</span>
+        </div>
+
+        <h1 class="hero-title">
+          Exploring hardware &amp; software, <br>
+          <span class="text-gradient">building practical engineering solutions.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          I am <strong>Lahara Gowda</strong>, a 2nd-year engineering student with a strong passion for programming, embedded hardware, and web development. From C, Python, and Java problem-solving to Arduino sensor circuits, I love turning engineering concepts into functional projects.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#skills" class="btn btn-primary">
+            <span>Explore My Skills</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <span>View Academic Projects</span>
+          </a>
+        </div>
+
+        <!-- Metric Counter Grid -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-value" data-count="2">2nd</span>
+            <span class="stat-label">Year Engineering</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" data-count="8">8+</span>
+            <span class="stat-label">Technical Skills</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" data-count="5">5</span>
+            <span class="stat-label">Core Soft Skills</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" data-count="100">100%</span>
+            <span class="stat-label">Dedication &amp; Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about" aria-label="About Lahara Gowda">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag about-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tag-icon">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            About Me
+          </span>
+          <h2 class="section-title">Engineering with Purpose &amp; Precision</h2>
+          <p class="section-subtitle">
+            A look into my journey as a software engineer, technical philosophy, and what drives me beyond the code.
+          </p>
+        </div>
+
+        <div class="about-container">
+          <!-- Left Column: Interactive Profile Card -->
+          <div class="about-profile-card">
+            <div class="profile-image-container">
+              <!-- Real Photo Frame -->
+              <div class="profile-avatar-frame active" id="photoAvatarFrame">
+                <img src="assets/lahara-gowda.jpg" alt="Lahara Gowda - Software Engineer" class="profile-photo" id="profilePhotoImg">
+              </div>
+
+              <!-- Pixel Art Avatar Frame -->
+              <div class="profile-avatar-frame" id="pixelAvatarFrame">
+                <div class="pixel-art-wrapper">
+                  <svg class="pixel-avatar-svg" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+                    <!-- Background -->
+                    <rect width="32" height="32" fill="#1e1b4b"/>
+                    <rect x="2" y="2" width="28" height="28" fill="#0f172a"/>
+                    <!-- Ambient Glow pixels -->
+                    <rect x="4" y="4" width="2" height="2" fill="#6366f1" opacity="0.4"/>
+                    <rect x="26" y="4" width="2" height="2" fill="#8b5cf6" opacity="0.4"/>
+                    <!-- Ponytail hair behind -->
+                    <rect x="20" y="10" width="4" height="10" fill="#18181b"/>
+                    <rect x="22" y="14" width="3" height="8" fill="#18181b"/>
+                    <!-- Hair Base -->
+                    <rect x="10" y="5" width="12" height="3" fill="#18181b"/>
+                    <rect x="8" y="7" width="16" height="4" fill="#18181b"/>
+                    <rect x="7" y="10" width="18" height="5" fill="#18181b"/>
+                    <!-- Hair Parting & Shading -->
+                    <rect x="15" y="5" width="2" height="5" fill="#09090b"/>
+                    <rect x="11" y="6" width="3" height="2" fill="#27272a"/>
+                    <rect x="18" y="6" width="3" height="2" fill="#27272a"/>
+                    <!-- Face Base -->
+                    <rect x="9" y="11" width="14" height="10" fill="#b47a54"/>
+                    <rect x="10" y="20" width="12" height="2" fill="#a16744"/>
+                    <!-- Cheeks / Soft tone -->
+                    <rect x="10" y="15" width="2" height="2" fill="#bf855e"/>
+                    <rect x="20" y="15" width="2" height="2" fill="#bf855e"/>
+                    <!-- Eyes & Eyebrows -->
+                    <rect x="10" y="12" width="3" height="1" fill="#18181b"/>
+                    <rect x="19" y="12" width="3" height="1" fill="#18181b"/>
+                    <rect x="11" y="13" width="2" height="2" fill="#18181b"/>
+                    <rect x="19" y="13" width="2" height="2" fill="#18181b"/>
+                    <rect x="11" y="13" width="1" height="1" fill="#ffffff"/>
+                    <rect x="19" y="13" width="1" height="1" fill="#ffffff"/>
+                    <!-- Nose -->
+                    <rect x="15" y="15" width="2" height="2" fill="#955e3e"/>
+                    <!-- Smile -->
+                    <rect x="14" y="18" width="4" height="1" fill="#783c27"/>
+                    <rect x="13" y="17" width="1" height="1" fill="#783c27"/>
+                    <rect x="18" y="17" width="1" height="1" fill="#783c27"/>
+                    <!-- Neck -->
+                    <rect x="14" y="21" width="4" height="2" fill="#a16744"/>
+                    <!-- White Collared Shirt -->
+                    <rect x="14" y="23" width="4" height="6" fill="#f8fafc"/>
+                    <polygon points="13,23 15,26 13,26" fill="#e2e8f0"/>
+                    <polygon points="19,23 17,26 19,26" fill="#e2e8f0"/>
+                    <!-- Black Blazer Jacket -->
+                    <rect x="7" y="23" width="6" height="7" fill="#09090b"/>
+                    <rect x="19" y="23" width="6" height="7" fill="#09090b"/>
+                    <rect x="6" y="25" width="2" height="5" fill="#18181b"/>
+                    <rect x="24" y="25" width="2" height="5" fill="#18181b"/>
+                    <!-- Blazer Lapels -->
+                    <polygon points="11,23 13,28 11,28" fill="#18181b"/>
+                    <polygon points="21,23 19,28 21,28" fill="#18181b"/>
+                    <!-- Frame Accent -->
+                    <rect x="0" y="0" width="32" height="1" fill="#3b82f6"/>
+                    <rect x="0" y="31" width="32" height="1" fill="#3b82f6"/>
+                    <rect x="0" y="0" width="1" height="32" fill="#3b82f6"/>
+                    <rect x="31" y="0" width="1" height="32" fill="#3b82f6"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Avatar Mode Switcher Toggle -->
+              <div class="avatar-toggle-bar" role="group" aria-label="Avatar style toggle">
+                <button class="avatar-tab active" id="showPhotoBtn" type="button" aria-pressed="true" title="View Real Photo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                  <span>Photo</span>
+                </button>
+                <button class="avatar-tab" id="showPixelBtn" type="button" aria-pressed="false" title="View Pixel-Art Avatar">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                    <rect x="2" y="2" width="20" height="20" rx="2"></rect>
+                    <rect x="8" y="8" width="2" height="2" fill="currentColor"></rect>
+                    <rect x="14" y="8" width="2" height="2" fill="currentColor"></rect>
+                    <rect x="10" y="14" width="4" height="2" fill="currentColor"></rect>
+                  </svg>
+                  <span>Pixel Art</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Profile Info & Badges -->
+            <div class="profile-details">
+              <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span>Open for Engineering Roles</span>
+              </div>
+              <h3 class="profile-name">Lahara Gowda</h3>
+              <p class="profile-role">Software Engineer &amp; Full-Stack Builder</p>
+
+              <div class="profile-meta-tags">
+                <span class="p-meta-tag">📍 Bengaluru, India</span>
+                <span class="p-meta-tag">💻 Full Stack &amp; Cloud</span>
+                <span class="p-meta-tag">⚡ Modern Web &amp; APIs</span>
+              </div>
+
+              <div class="profile-social-row">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="p-social-link" title="GitHub">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="p-social-link" title="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="mailto:laharagowda.dev@gmail.com" class="p-social-link" title="Email Lahara">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Bio, Career Highlights & Personal Interests -->
+          <div class="about-content-card">
+            <div class="bio-intro-block">
+              <span class="bio-label">HELLO WORLD</span>
+              <h3 class="bio-headline">
+                I'm <span class="text-gradient">Lahara Gowda</span>, crafting software that balances performance, elegance, and scale.
+              </h3>
+              <p class="bio-paragraph">
+                I am a passionate software engineer dedicated to building resilient web platforms, high-throughput backend services, and pixel-precise user experiences. I thrive on untangling complex system challenges and translating technical requirements into intuitive, reliable products.
+              </p>
+              <p class="bio-paragraph">
+                With a deep appreciation for software craftsmanship, my work bridges rigorous computer science foundations with user-first design. Whether optimizing server-side data pipelines, designing clean REST/GraphQL APIs, or crafting smooth 60fps web interfaces, I believe in writing code that is maintainable, well-tested, and built to scale.
+              </p>
+            </div>
+
+            <!-- Career Highlights -->
+            <div class="about-sub-section">
+              <h4 class="sub-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="title-icon">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+                Career Highlights &amp; Technical Strengths
+              </h4>
+              <div class="highlights-grid">
+                <div class="highlight-item">
+                  <div class="h-icon-box">⚡</div>
+                  <div class="h-text">
+                    <strong>Scalable Architectures</strong>
+                    <span>Designed microservices &amp; event pipelines handling millions of daily transactions with 99.9% uptime.</span>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="h-icon-box">🎨</div>
+                  <div class="h-text">
+                    <strong>Full-Stack Craftsmanship</strong>
+                    <span>Built modern web interfaces using TypeScript, React, and Next.js paired with Node.js and Go microservices.</span>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="h-icon-box">🛡️</div>
+                  <div class="h-text">
+                    <strong>Quality &amp; Maintainability</strong>
+                    <span>Strong advocate for comprehensive testing (unit, integration, E2E), strict type safety, and CI/CD automation.</span>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="h-icon-box">🤝</div>
+                  <div class="h-text">
+                    <strong>Team Collaboration</strong>
+                    <span>Proactive contributor across cross-functional teams, code review mentorship, and engineering knowledge sharing.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Personal Interests -->
+            <div class="about-sub-section">
+              <h4 class="sub-section-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="title-icon">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6l4 2"></path>
+                </svg>
+                Personal Interests &amp; Behind the Screen
+              </h4>
+              <p class="interests-desc">
+                When I'm not writing code or debugging distributed traces, you'll usually find me exploring these creative and technical pursuits:
+              </p>
+              <div class="interests-tags">
+                <span class="interest-pill">☕ Specialty Coffee &amp; Brewing</span>
+                <span class="interest-pill">🧩 Algorithmic Puzzles &amp; LeetCode</span>
+                <span class="interest-pill">📚 Tech Architecture &amp; System Design Blogs</span>
+                <span class="interest-pill">🌱 Open Source &amp; Developer Communities</span>
+                <span class="interest-pill">🎮 Retro Gaming &amp; Pixel Art Aesthetics</span>
+                <span class="interest-pill">✈️ Travel &amp; Exploring New Cultures</span>
+              </div>
+            </div>
+
+            <!-- Quick Info Bar & CTAs -->
+            <div class="about-actions-bar">
+              <div class="action-buttons">
+                <a href="#timeline" class="btn btn-primary btn-sm">
+                  <span>Explore Career Timeline</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                  </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-sm">
+                  <span>Get in Touch</span>
+                </a>
+              </div>
+
+              <div class="quick-stat-badge">
+                <span class="qs-dot"></span>
+                <span>Ready for Impact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tag-icon">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            Technical Expertise
+          </span>
+          <h2 class="section-title">Core Skills & Technologies</h2>
+          <p class="section-subtitle">A balanced toolkit cultivated through production systems, open-source projects, and ongoing research.</p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-nav" role="tablist" aria-label="Skills Category Filter">
+          <button class="skill-tab active" data-filter="all" role="tab" aria-selected="true">All Domains</button>
+          <button class="skill-tab" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="skill-tab" data-filter="backend" role="tab" aria-selected="false">Backend & APIs</button>
+          <button class="skill-tab" data-filter="cloud" role="tab" aria-selected="false">Cloud & DevOps</button>
+          <button class="skill-tab" data-filter="architecture" role="tab" aria-selected="false">Architecture</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Frontend -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">TypeScript / JavaScript (ESNext)</h4>
+                <span class="skill-level">Expert • 6+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">Strict type safety, modern async patterns, functional paradigms, and performance tuning.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">React & Next.js</h4>
+                <span class="skill-level">Advanced • 5+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">Server Components, Custom Hooks, Zustand, TanStack Query, and optimized client rendering.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">CSS3, Animations & UI Systems</h4>
+                <span class="skill-level">Advanced • 6+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">CSS Grid, Flexbox, custom CSS properties, micro-animations, glassmorphism, and responsive layouts.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 90%;"></div></div>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 17l6-6-6-6m8 12h8"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">Node.js & Go</h4>
+                <span class="skill-level">Advanced • 5+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">High-throughput microservices, concurrent goroutines, REST APIs, and GraphQL gateways.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 88%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="backend">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">PostgreSQL & Redis</h4>
+                <span class="skill-level">Advanced • 5+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">Complex query optimization, indexing strategies, distributed caching, pub/sub, and schema migrations.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 87%;"></div></div>
+          </div>
+
+          <!-- Cloud & Architecture -->
+          <div class="skill-card" data-category="cloud">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">AWS & Containerization</h4>
+                <span class="skill-level">Proficient • 4+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">Docker, ECS, Lambda serverless, S3, CloudFront, Terraform, and automated CI/CD pipelines.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 84%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="architecture">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">System Design & Observability</h4>
+                <span class="skill-level">Advanced • 5+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">Distributed tracing, OpenTelemetry, event-driven message brokers, fault tolerance, and API contracts.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 89%;"></div></div>
+          </div>
+
+          <div class="skill-card" data-category="architecture">
+            <div class="skill-header">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 class="skill-name">Testing & Quality Engineering</h4>
+                <span class="skill-level">Advanced • 6+ Yrs</span>
+              </div>
+            </div>
+            <p class="skill-desc">Unit, integration, and E2E testing (Vitest, Jest, Playwright), CI automation, and code review governance.</p>
+            <div class="skill-meter"><div class="skill-progress" style="width: 91%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- INTERACTIVE TIMELINE OF CAREER MILESTONES (BENEATH SKILLS)   -->
+    <!-- ============================================================ -->
+    <section class="section timeline-section" id="timeline" aria-label="Interactive Career Timeline">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag timeline-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tag-icon">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Chronological Journey
+          </span>
+          <h2 class="section-title">Career Milestones & Trajectory</h2>
+          <p class="section-subtitle">
+            An interactive timeline celebrating educational foundations, landmark open-source projects, and professional milestones.
+          </p>
+        </div>
+
+        <!-- Interactive Timeline Controls & Filter Bar -->
+        <div class="timeline-controls-wrapper">
+          <div class="timeline-filters" role="group" aria-label="Filter timeline milestones by category">
+            <button class="t-filter-btn active" data-category="all" id="filterAll">
+              <span class="filter-label">All Milestones</span>
+              <span class="filter-count" id="countAll">6</span>
+            </button>
+            <button class="t-filter-btn" data-category="career" id="filterCareer">
+              <span class="filter-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </span>
+              <span class="filter-label">Career</span>
+              <span class="filter-count" id="countCareer">2</span>
+            </button>
+            <button class="t-filter-btn" data-category="project" id="filterProject">
+              <span class="filter-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                  <path d="M12 9V4s3.03.55 4 2c1.08 1.62 0 5 0 5"></path>
+                </svg>
+              </span>
+              <span class="filter-label">Major Projects</span>
+              <span class="filter-count" id="countProject">2</span>
+            </button>
+            <button class="t-filter-btn" data-category="education" id="filterEducation">
+              <span class="filter-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </span>
+              <span class="filter-label">Education</span>
+              <span class="filter-count" id="countEducation">2</span>
+            </button>
+          </div>
+
+          <!-- Secondary Toolbar: Search, Sort, Expand All -->
+          <div class="timeline-toolbar">
+            <div class="search-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="milestoneSearch" placeholder="Search milestones or skills..." aria-label="Search milestones or skills">
+              <button id="clearSearchBtn" class="clear-search-btn" aria-label="Clear search query" style="display: none;">&times;</button>
+            </div>
+
+            <div class="toolbar-actions">
+              <button id="sortToggleBtn" class="tool-btn" title="Toggle Chronological Order" aria-label="Sort Order: Newest First">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tool-icon">
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                  <line x1="3" y1="21" x2="21" y2="21"></line>
+                </svg>
+                <span id="sortLabel">Newest First</span>
+              </button>
+              <button id="expandAllBtn" class="tool-btn" title="Expand or collapse all milestone cards" aria-label="Expand all milestones">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tool-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+                <span id="expandLabel">Expand All</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Container Component -->
+        <div class="timeline-component" id="timelineComponent">
+          <!-- Animated vertical line tracker -->
+          <div class="timeline-spine-track" id="timelineSpineTrack">
+            <div class="timeline-spine-progress" id="timelineProgress"></div>
+          </div>
+
+          <!-- Milestones List -->
+          <div class="timeline-items-wrapper" id="timelineItemsWrapper">
+
+            <!-- Milestone 1: Senior Software Engineer (Career) -->
+            <article class="timeline-item" data-category="career" data-order="1" data-year="2024" id="milestone-1">
+              <!-- Spine Node Anchor -->
+              <div class="timeline-node" aria-hidden="true">
+                <div class="node-halo career-halo"></div>
+                <div class="node-icon-inner career-bg">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div class="timeline-card">
+                <header class="card-header">
+                  <div class="header-meta">
+                    <span class="time-badge career-badge">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      2024 — Present
+                    </span>
+                    <span class="category-pill career-pill">Career Milestone</span>
+                  </div>
+
+                  <h3 class="milestone-title">Staff Software Engineer &amp; Platform Lead</h3>
+                  <div class="milestone-org">
+                    <span class="org-name">Aether Cloud Systems</span>
+                    <span class="org-divider">•</span>
+                    <span class="org-loc">San Francisco, CA (Hybrid)</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <p class="milestone-summary">
+                    Spearheading core developer infrastructure and high-throughput real-time event routing for enterprise customers. Driving architectural modernization and mentoring a distributed pod of 8 engineers.
+                  </p>
+
+                  <!-- Highlight metrics -->
+                  <div class="metric-chips">
+                    <div class="metric-chip">
+                      <span class="metric-num">45M+</span>
+                      <span class="metric-txt">Daily Events Handled</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">99.99%</span>
+                      <span class="metric-txt">SLA Reliability</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">-42%</span>
+                      <span class="metric-txt">P99 API Latency</span>
+                    </div>
+                  </div>
+
+                  <!-- Expandable Accordion -->
+                  <div class="card-details-collapse">
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-1">
+                      <span class="toggle-text">View Key Milestones &amp; Outcomes</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                    <div class="details-panel" id="details-1" hidden>
+                      <ul class="milestone-bullets">
+                        <li>Designed and deployed an asynchronous message pipeline using Go, Kafka, and Redis, lowering server infrastructure costs by $180,000 annually.</li>
+                        <li>Standardized TypeScript design system across 4 engineering teams, accelerating feature development velocity by 35%.</li>
+                        <li>Implemented zero-downtime blue/green deployment strategy on AWS ECS with automated canary verification.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Tech stack tags -->
+                  <div class="tech-tags">
+                    <span class="tech-tag">Go</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Kafka</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">AWS ECS</span>
+                    <span class="tech-tag">React</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Milestone 2: FlowEngine Open-Source (Major Project) -->
+            <article class="timeline-item" data-category="project" data-order="2" data-year="2023" id="milestone-2">
+              <!-- Spine Node Anchor -->
+              <div class="timeline-node" aria-hidden="true">
+                <div class="node-halo project-halo"></div>
+                <div class="node-icon-inner project-bg">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div class="timeline-card">
+                <header class="card-header">
+                  <div class="header-meta">
+                    <span class="time-badge project-badge">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      2023
+                    </span>
+                    <span class="category-pill project-pill">Major Project</span>
+                  </div>
+
+                  <h3 class="milestone-title">FlowEngine — Distributed Workflow Orchestrator</h3>
+                  <div class="milestone-org">
+                    <span class="org-name">Open Source Project</span>
+                    <span class="org-divider">•</span>
+                    <span class="org-loc">Global Community (GitHub)</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <p class="milestone-summary">
+                    Designed and built an open-source, resilient workflow automation runtime capable of executing complex directed acyclic graphs (DAGs) with automatic state hydration and crash recovery.
+                  </p>
+
+                  <!-- Highlight metrics -->
+                  <div class="metric-chips">
+                    <div class="metric-chip">
+                      <span class="metric-num">4.6k+</span>
+                      <span class="metric-txt">GitHub Stars</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">120k+</span>
+                      <span class="metric-txt">NPM / Docker Pulls</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">#1</span>
+                      <span class="metric-txt">Product of the Day</span>
+                    </div>
+                  </div>
+
+                  <!-- Expandable Accordion -->
+                  <div class="card-details-collapse">
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-2">
+                      <span class="toggle-text">View Key Milestones &amp; Outcomes</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                    <div class="details-panel" id="details-2" hidden>
+                      <ul class="milestone-bullets">
+                        <li>Engineered a custom topological sort scheduler capable of resolving 10,000 parallel execution nodes in under 8ms.</li>
+                        <li>Provided a zero-dependency interactive visual canvas editor built in vanilla WebGL &amp; SVG with real-time state telemetry.</li>
+                        <li>Maintained active developer community of 45+ international open-source contributors with automated regression suites.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Tech stack tags -->
+                  <div class="tech-tags">
+                    <span class="tech-tag">Rust</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">WebSockets</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">SQLite</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Milestone 3: Software Engineer (Career) -->
+            <article class="timeline-item" data-category="career" data-order="3" data-year="2021" id="milestone-3">
+              <!-- Spine Node Anchor -->
+              <div class="timeline-node" aria-hidden="true">
+                <div class="node-halo career-halo"></div>
+                <div class="node-icon-inner career-bg">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div class="timeline-card">
+                <header class="card-header">
+                  <div class="header-meta">
+                    <span class="time-badge career-badge">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      2021 — 2023
+                    </span>
+                    <span class="category-pill career-pill">Career Milestone</span>
+                  </div>
+
+                  <h3 class="milestone-title">Full-Stack Software Engineer</h3>
+                  <div class="milestone-org">
+                    <span class="org-name">Finova Technologies</span>
+                    <span class="org-divider">•</span>
+                    <span class="org-loc">New York, NY</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <p class="milestone-summary">
+                    Developed consumer-facing fintech portals and low-latency fraud monitoring services. Co-led the frontend migration from monolithic legacy codebase to modern React and Next.js.
+                  </p>
+
+                  <!-- Highlight metrics -->
+                  <div class="metric-chips">
+                    <div class="metric-chip">
+                      <span class="metric-num">$1.2B+</span>
+                      <span class="metric-txt">Processed Payments</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">99.9%</span>
+                      <span class="metric-txt">Fraud Model Accuracy</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">60fps</span>
+                      <span class="metric-txt">Interactive Analytics</span>
+                    </div>
+                  </div>
+
+                  <!-- Expandable Accordion -->
+                  <div class="card-details-collapse">
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-3">
+                      <span class="toggle-text">View Key Milestones &amp; Outcomes</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                    <div class="details-panel" id="details-3" hidden>
+                      <ul class="milestone-bullets">
+                        <li>Rewrote checkout conversion funnel, driving a 22% improvement in user onboarding completion rate.</li>
+                        <li>Architected real-time WebSocket dashboard for institutional traders displaying dynamic order book updates.</li>
+                        <li>Achieved SOC2 Type II compliance through strict data masking, cryptographic key rotation, and audit log pipelines.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Tech stack tags -->
+                  <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">GraphQL</span>
+                    <span class="tech-tag">Tailwind</span>
+                    <span class="tech-tag">Jest</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Milestone 4: AI Diagnostic Assistant (Major Project) -->
+            <article class="timeline-item" data-category="project" data-order="4" data-year="2021" id="milestone-4">
+              <!-- Spine Node Anchor -->
+              <div class="timeline-node" aria-hidden="true">
+                <div class="node-halo project-halo"></div>
+                <div class="node-icon-inner project-bg">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="22" y1="12" x2="18" y2="12"></line>
+                    <line x1="6" y1="12" x2="2" y2="12"></line>
+                    <line x1="12" y1="6" x2="12" y2="2"></line>
+                    <line x1="12" y1="22" x2="12" y2="18"></line>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div class="timeline-card">
+                <header class="card-header">
+                  <div class="header-meta">
+                    <span class="time-badge project-badge">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      2021
+                    </span>
+                    <span class="category-pill project-pill">Major Project</span>
+                  </div>
+
+                  <h3 class="milestone-title">NeuroVision — AI Medical Diagnostic Assistant</h3>
+                  <div class="milestone-org">
+                    <span class="org-name">University Research Capstone</span>
+                    <span class="org-divider">•</span>
+                    <span class="org-loc">Published in IEEE Student Symposium</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <p class="milestone-summary">
+                    Developed a computer vision diagnostic pipeline that assists radiologists by highlighting subtle anomalies in MRI and CT scans. Built both the inference engine and the web-based DICOM viewer.
+                  </p>
+
+                  <!-- Highlight metrics -->
+                  <div class="metric-chips">
+                    <div class="metric-chip">
+                      <span class="metric-num">96.4%</span>
+                      <span class="metric-txt">Validation Accuracy</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">100k+</span>
+                      <span class="metric-txt">Annotated Scans</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">1st Prize</span>
+                      <span class="metric-txt">Senior Capstone Award</span>
+                    </div>
+                  </div>
+
+                  <!-- Expandable Accordion -->
+                  <div class="card-details-collapse">
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-4">
+                      <span class="toggle-text">View Key Milestones &amp; Outcomes</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                    <div class="details-panel" id="details-4" hidden>
+                      <ul class="milestone-bullets">
+                        <li>Implemented modified U-Net segmentation models with PyTorch and optimized inference via TensorRT on edge GPUs.</li>
+                        <li>Constructed high-speed web DICOM viewer using HTML5 Canvas &amp; WebGL shaders, enabling instantaneous 3D volume slicing.</li>
+                        <li>Co-authored research paper presented at the 2021 Biomedical Computing Student Symposium.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Tech stack tags -->
+                  <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">PyTorch</span>
+                    <span class="tech-tag">WebGL</span>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Canvas API</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Milestone 5: B.S. Computer Science (Education) -->
+            <article class="timeline-item" data-category="education" data-order="5" data-year="2021" id="milestone-5">
+              <!-- Spine Node Anchor -->
+              <div class="timeline-node" aria-hidden="true">
+                <div class="node-halo education-halo"></div>
+                <div class="node-icon-inner education-bg">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div class="timeline-card">
+                <header class="card-header">
+                  <div class="header-meta">
+                    <span class="time-badge education-badge">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      2017 — 2021
+                    </span>
+                    <span class="category-pill education-pill">Education Milestone</span>
+                  </div>
+
+                  <h3 class="milestone-title">B.S. in Computer Science &amp; Engineering</h3>
+                  <div class="milestone-org">
+                    <span class="org-name">University of California, Berkeley</span>
+                    <span class="org-divider">•</span>
+                    <span class="org-loc">Berkeley, CA</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <p class="milestone-summary">
+                    Rigorous core focus in distributed computing, algorithms, compilers, and machine intelligence. Graduated with highest honors and served as Lead Undergraduate Teaching Assistant.
+                  </p>
+
+                  <!-- Highlight metrics -->
+                  <div class="metric-chips">
+                    <div class="metric-chip">
+                      <span class="metric-num">3.95</span>
+                      <span class="metric-txt">Cumulative GPA</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">Summa</span>
+                      <span class="metric-txt">Cum Laude Honors</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">6 Terms</span>
+                      <span class="metric-txt">Dean's Honor List</span>
+                    </div>
+                  </div>
+
+                  <!-- Expandable Accordion -->
+                  <div class="card-details-collapse">
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-5">
+                      <span class="toggle-text">View Key Milestones &amp; Outcomes</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                    <div class="details-panel" id="details-5" hidden>
+                      <ul class="milestone-bullets">
+                        <li>Selected as Head Teaching Assistant for CS61B (Data Structures &amp; Algorithms), leading weekly lab sections for 140+ students.</li>
+                        <li>Completed coursework in Operating Systems, Database Internals, Machine Learning, and Computer Security.</li>
+                        <li>President of the Open Source Developer Guild, organizing weekly coding workshops and community hackathons.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Tech stack tags -->
+                  <div class="tech-tags">
+                    <span class="tech-tag">Algorithms</span>
+                    <span class="tech-tag">Data Structures</span>
+                    <span class="tech-tag">C / C++</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Operating Systems</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Milestone 6: Global Hackathon & Certification (Education / Projects) -->
+            <article class="timeline-item" data-category="education" data-order="6" data-year="2019" id="milestone-6">
+              <!-- Spine Node Anchor -->
+              <div class="timeline-node" aria-hidden="true">
+                <div class="node-halo education-halo"></div>
+                <div class="node-icon-inner education-bg">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 15l-2 5-1-2-2 1 2-5"></path>
+                    <circle cx="12" cy="8" r="7"></circle>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Content Card -->
+              <div class="timeline-card">
+                <header class="card-header">
+                  <div class="header-meta">
+                    <span class="time-badge education-badge">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mini-icon">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      2019
+                    </span>
+                    <span class="category-pill education-pill">Education &amp; Honors</span>
+                  </div>
+
+                  <h3 class="milestone-title">AWS Certified Solutions Architect &amp; Hackathon Champion</h3>
+                  <div class="milestone-org">
+                    <span class="org-name">Global Tech Olympiad &amp; AWS</span>
+                    <span class="org-divider">•</span>
+                    <span class="org-loc">International Competition</span>
+                  </div>
+                </header>
+
+                <div class="card-body">
+                  <p class="milestone-summary">
+                    Secured AWS Solutions Architect Associate credential while winning 1st place in the Global Collegiate Hackathon for "SoundWave"—an assistive haptic interface for auditory accessibility.
+                  </p>
+
+                  <!-- Highlight metrics -->
+                  <div class="metric-chips">
+                    <div class="metric-chip">
+                      <span class="metric-num">#1 / 320</span>
+                      <span class="metric-txt">Teams Competed</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">920 / 1000</span>
+                      <span class="metric-txt">AWS Exam Score</span>
+                    </div>
+                    <div class="metric-chip">
+                      <span class="metric-num">$15k</span>
+                      <span class="metric-txt">Prize Grant</span>
+                    </div>
+                  </div>
+
+                  <!-- Expandable Accordion -->
+                  <div class="card-details-collapse">
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-6">
+                      <span class="toggle-text">View Key Milestones &amp; Outcomes</span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toggle-arrow">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                    <div class="details-panel" id="details-6" hidden>
+                      <ul class="milestone-bullets">
+                        <li>Developed IoT prototype pairing Arduino haptic motors with Web Audio API frequency analysis in 36 consecutive hours.</li>
+                        <li>Earned AWS Solutions Architect certification covering multi-tier cloud infrastructure, VPC peering, and disaster recovery.</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <!-- Tech stack tags -->
+                  <div class="tech-tags">
+                    <span class="tech-tag">AWS Cloud</span>
+                    <span class="tech-tag">Web Audio API</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">IoT / Microcontrollers</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /timeline-items-wrapper -->
+
+          <!-- Empty State (When search/filter produces 0 results) -->
+          <div class="timeline-empty-state" id="timelineEmptyState" style="display: none;">
+            <div class="empty-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <line x1="8" y1="11" x2="14" y2="11"></line>
+              </svg>
+            </div>
+            <h4>No matching milestones found</h4>
+            <p>Try resetting the category filter or searching for another keyword like "Go", "React", or "AWS".</p>
+            <button class="btn btn-secondary btn-sm" id="resetTimelineFiltersBtn">Reset Filters</button>
+          </div>
+        </div><!-- /timeline-component -->
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tag-icon">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Featured Work
+          </span>
+          <h2 class="section-title">Selected Software Projects</h2>
+          <p class="section-subtitle">Real-world systems, open-source utilities, and developer productivity tooling.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-banner project-banner-1">
+              <div class="project-badge-float">Open Source</div>
+              <div class="banner-overlay">
+                <div class="banner-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-cat">Distributed Systems</div>
+              <h3 class="project-title">FlowEngine Orchestrator</h3>
+              <p class="project-desc">
+                High-throughput distributed workflow runtime with DAG execution, persistent crash recovery, and live telemetry web dashboard.
+              </p>
+              <div class="project-tags">
+                <span>Rust</span>
+                <span>TypeScript</span>
+                <span>WebSockets</span>
+                <span>React</span>
+              </div>
+              <div class="project-links">
+                <a href="#timeline" class="p-link">
+                  <span>View in Timeline</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="p-link-arrow">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-banner project-banner-2">
+              <div class="project-badge-float">Healthcare AI</div>
+              <div class="banner-overlay">
+                <div class="banner-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-cat">Machine Learning &amp; WebGL</div>
+              <h3 class="project-title">NeuroVision Diagnostic Suite</h3>
+              <p class="project-desc">
+                Deep learning neural network assistant for radiological imaging with 60fps 3D volume slicing in the browser.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>PyTorch</span>
+                <span>WebGL</span>
+                <span>FastAPI</span>
+              </div>
+              <div class="project-links">
+                <a href="#timeline" class="p-link">
+                  <span>View in Timeline</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="p-link-arrow">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-banner project-banner-3">
+              <div class="project-badge-float">Fintech</div>
+              <div class="banner-overlay">
+                <div class="banner-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                    <line x1="2" y1="10" x2="22" y2="10"></line>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-cat">Real-time Financial Systems</div>
+              <h3 class="project-title">QuantPulse Order Engine</h3>
+              <p class="project-desc">
+                Real-time institutional liquidity visualizer with millisecond order execution tracking and anomaly detection.
+              </p>
+              <div class="project-tags">
+                <span>Go</span>
+                <span>Kafka</span>
+                <span>Next.js</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#timeline" class="p-link">
+                  <span>View in Timeline</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="p-link-arrow">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials" aria-label="Client and Peer Testimonials">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <span class="section-tag testimonials-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tag-icon">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            Social Proof &amp; Endorsements
+          </span>
+          <h2 class="section-title">What Leaders &amp; Peers Say</h2>
+          <p class="section-subtitle">
+            Feedback from engineering directors, technical peers, and product partners on leadership, architecture, and craftsmanship.
+          </p>
+        </div>
+
+        <!-- Filter tabs for testimonials -->
+        <div class="testimonials-filter-nav" role="tablist" aria-label="Testimonial Filter Tabs">
+          <button class="t-pill-btn active" data-filter="all" role="tab" aria-selected="true">
+            <span>All Endorsements</span>
+            <span class="pill-count" id="countAllTestimonials">4</span>
+          </button>
+          <button class="t-pill-btn" data-filter="leaders" role="tab" aria-selected="false">
+            <span class="pill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </span>
+            <span>Engineering Leadership</span>
+            <span class="pill-count">1</span>
+          </button>
+          <button class="t-pill-btn" data-filter="peers" role="tab" aria-selected="false">
+            <span class="pill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </span>
+            <span>Peer Engineers</span>
+            <span class="pill-count">2</span>
+          </button>
+          <button class="t-pill-btn" data-filter="clients" role="tab" aria-selected="false">
+            <span class="pill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+              </svg>
+            </span>
+            <span>Clients &amp; Product</span>
+            <span class="pill-count">1</span>
+          </button>
+        </div>
+
+        <!-- Testimonials Cards Grid -->
+        <div class="testimonials-grid" id="testimonialsGrid">
+
+          <!-- Testimonial 1: Engineering VP (Leadership) -->
+          <article class="testimonial-card" data-category="leaders" id="testimonial-1">
+            <div class="testimonial-top">
+              <div class="quote-symbol" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                </svg>
+              </div>
+              <div class="star-rating" aria-label="5 out of 5 stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+              </div>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="v-check">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Verified Leadership
+              </span>
+            </div>
+
+            <div class="testimonial-body">
+              <blockquote class="testimonial-quote">
+                “Lahara is that rare 10x engineer who combines deep systems mastery with outstanding cross-team communication. Under her technical leadership, our ingestion pipeline achieved <strong>99.99% SLA uptime</strong> while slashing P99 latency by over 40%. Any engineering organization would be fortunate to have her spearheading architecture.”
+              </blockquote>
+            </div>
+
+            <footer class="testimonial-footer">
+              <div class="author-profile">
+                <div class="author-avatar avatar-purple">
+                  <span>SJ</span>
+                </div>
+                <div class="author-meta">
+                  <h4 class="author-name">Sarah Jenkins</h4>
+                  <p class="author-role">VP of Engineering at CloudScale Technologies</p>
+                  <span class="relationship-tag">Direct Engineering Manager</span>
+                </div>
+              </div>
+              <div class="testimonial-skill-tag">
+                <span>Distributed Systems &amp; Scaling</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 2: Senior Architect (Peer) -->
+          <article class="testimonial-card" data-category="peers" id="testimonial-2">
+            <div class="testimonial-top">
+              <div class="quote-symbol" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                </svg>
+              </div>
+              <div class="star-rating" aria-label="5 out of 5 stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+              </div>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="v-check">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Senior Peer
+              </span>
+            </div>
+
+            <div class="testimonial-body">
+              <blockquote class="testimonial-quote">
+                “Collaborating with Lahara on our institutional trading platform was a masterclass in frontend performance and API contract design. She writes code with surgical precision, always with future maintainability and robust error handling in mind. Her work on <strong>60fps canvas rendering</strong> eliminated frame drops completely.”
+              </blockquote>
+            </div>
+
+            <footer class="testimonial-footer">
+              <div class="author-profile">
+                <div class="author-avatar avatar-blue">
+                  <span>DC</span>
+                </div>
+                <div class="author-meta">
+                  <h4 class="author-name">David Chen</h4>
+                  <p class="author-role">Principal Architect at Finova Technologies</p>
+                  <span class="relationship-tag">Senior Staff Collaborator</span>
+                </div>
+              </div>
+              <div class="testimonial-skill-tag">
+                <span>Frontend Architecture &amp; TypeScript</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 3: Head of Product (Client / Product) -->
+          <article class="testimonial-card" data-category="clients" id="testimonial-3">
+            <div class="testimonial-top">
+              <div class="quote-symbol" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                </svg>
+              </div>
+              <div class="star-rating" aria-label="5 out of 5 stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+              </div>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="v-check">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                Client Stakeholder
+              </span>
+            </div>
+
+            <div class="testimonial-body">
+              <blockquote class="testimonial-quote">
+                “Lahara doesn't just write code; she deeply understands product strategy and user psychology. Her rapid prototyping turned complex, ambiguous technical concepts into a seamless, high-converting product experience ahead of schedule. She is proactive, transparent, and a delight to partner with.”
+              </blockquote>
+            </div>
+
+            <footer class="testimonial-footer">
+              <div class="author-profile">
+                <div class="author-avatar avatar-emerald">
+                  <span>ER</span>
+                </div>
+                <div class="author-meta">
+                  <h4 class="author-name">Elena Rostova</h4>
+                  <p class="author-role">Director of Product at Nexus Media Labs</p>
+                  <span class="relationship-tag">Enterprise Product Partner</span>
+                </div>
+              </div>
+              <div class="testimonial-skill-tag">
+                <span>Product Mindset &amp; Delivery</span>
+              </div>
+            </footer>
+          </article>
+
+          <!-- Testimonial 4: Open Source Lead (Peer) -->
+          <article class="testimonial-card" data-category="peers" id="testimonial-4">
+            <div class="testimonial-top">
+              <div class="quote-symbol" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                </svg>
+              </div>
+              <div class="star-rating" aria-label="5 out of 5 stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+              </div>
+              <span class="verified-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="v-check">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                OSS Peer
+              </span>
+            </div>
+
+            <div class="testimonial-body">
+              <blockquote class="testimonial-quote">
+                “Lahara’s architectural vision for <strong>FlowEngine</strong> set a high benchmark for asynchronous DAG execution. Beyond the code, her empathetic PR reviews, comprehensive documentation, and willingness to unblock junior contributors fostered one of the most welcoming developer communities in open source.”
+              </blockquote>
+            </div>
+
+            <footer class="testimonial-footer">
+              <div class="author-profile">
+                <div class="author-avatar avatar-amber">
+                  <span>MV</span>
+                </div>
+                <div class="author-meta">
+                  <h4 class="author-name">Marcus Vance</h4>
+                  <p class="author-role">Staff Engineer &amp; OSS Core Maintainer</p>
+                  <span class="relationship-tag">Co-Maintainer on FlowEngine</span>
+                </div>
+              </div>
+              <div class="testimonial-skill-tag">
+                <span>Open Source &amp; Mentorship</span>
+              </div>
+            </footer>
+          </article>
+
+        </div><!-- /testimonials-grid -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card-wrapper">
+          <div class="contact-info">
+            <span class="section-tag">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tag-icon">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get In Touch
+            </span>
+            <h2 class="contact-title">Let’s build something remarkable together.</h2>
+            <p class="contact-desc">
+              Whether you’re interested in collaborating on a technical project, exploring leadership opportunities, or just exchanging ideas on system architecture—my inbox is always open.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">Email</span>
+                  <a href="mailto:laharagowda.dev@gmail.com" class="c-value">laharagowda.dev@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="c-label">Location</span>
+                  <span class="c-value">Bengaluru, India (Open to Remote / Relocation)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="GitHub Profile" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Twitter Profile" title="Twitter / X">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-box">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" required placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" required placeholder="jane@example.com">
+              </div>
+              <div class="form-group">
+                <label for="contactSubject">Subject / Area of Interest</label>
+                <input type="text" id="contactSubject" placeholder="Engineering Leadership, Collaboration, etc.">
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" rows="4" required placeholder="Tell me about your project or opportunity..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+              <div id="formFeedback" class="form-feedback" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="nav-brand">
+          <span class="brand-bracket">&lt;</span>
+          <span class="brand-name">LaharaGowda</span>
+          <span class="brand-slash">/</span>
+          <span class="brand-bracket">&gt;</span>
+        </a>
+        <p class="footer-copy">Crafted with precision, semantic HTML5, and vanilla CSS &amp; JavaScript.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#header" class="back-to-top" title="Back to top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
